@@ -12,6 +12,8 @@ function demoPiecewiseImageFilter
 % Carlos Platero,   06/2016
 %
 %% List of image training set
+addpath('./aux_NLD/');
+
 pathImages = './data/';
 pathManualSeg = './ManualSegm/';
 im_size=128;
@@ -51,7 +53,7 @@ figure(1);imshow(u);
 figure(2);imshow(edges_canny);
 
 
-
+rmpath('./aux_NLD/');
 
 end
 
